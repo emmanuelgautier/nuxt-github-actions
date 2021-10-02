@@ -1087,6 +1087,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@emmanuelgautier/renovate-config@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@emmanuelgautier/renovate-config/-/renovate-config-1.2.2.tgz#5ba0f1e2a7f718862927142a4b709da075f0cfea"
+  integrity sha512-QEJ/Ym2CKlUaJ9zZRbXOfI2RsS7dW+JbiP4zmCgunqj2bMZyq6sqZ3fFv9UIcIxs+Y3WponMgl2G6/zW5RKUyg==
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"

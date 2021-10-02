@@ -43,10 +43,19 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies 👨🏻‍💻
-        run: yarn
+        run: yarn install --frozen-lockfile
 
       - name: Run linter 👀
         run: yarn lint
 
       - name: Run tests 🧪
         run: yarn test
+
+      - name: Run integration tests
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
+          build: yarn build
+          start: yarn run test:e2e:run
+          wait-on: 'http://localhost:3000'

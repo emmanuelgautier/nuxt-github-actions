@@ -10,6 +10,7 @@ module.exports = {
     'vue',
     'json'
   ],
+  modulePathIgnorePatterns: ['<rootDir>/cypress/'],
   transform: {
     "^.+\\.ts$": "ts-jest",
     '^.+\\.js$': 'babel-jest',

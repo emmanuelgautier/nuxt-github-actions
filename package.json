@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.15.7",
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "13.2.0",
+    "@commitlint/config-conventional": "13.2.0",
     "@cypress/vue": "2.2.3",
     "@cypress/webpack-dev-server": "1.6.0",
     "@emmanuelgautier/renovate-config": "1.2.2",

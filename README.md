@@ -1,4 +1,4 @@
-# nuxt-github-actions
+# Nuxt Github Actions
 
 ## Build Setup
 
@@ -67,3 +67,9 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+## Maintainers
+
+| [![Emmanuel Gautier](https://avatars0.githubusercontent.com/u/2765366?s=144)](https://www.emmanuelgautier.com) |
+| ------------------------------------------------------------------------------------------------------------- |
+| [Emmanuel Gautier](https://www.emmanuelgautier.com)

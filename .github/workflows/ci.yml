@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies 👨🏻‍💻
-        run: yarn install --frozen-lockfile
+        run: yarn --frozen-lockfile --silent
 
       - name: Run linter 👀
         run: yarn lint
@@ -57,5 +57,18 @@ jobs:
           browser: chrome
           headless: true
           build: yarn build
-          start: yarn run test:e2e:run
+          start: yarn start
+          command: yarn cy:run
           wait-on: 'http://localhost:3000'
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos

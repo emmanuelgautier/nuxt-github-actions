@@ -15,7 +15,8 @@
     "test:e2e:run": "start-server-and-test start http://localhost:3000 cy:run",
     "test:e2e:dev": "start-server-and-test dev http://localhost:3000 cy:open",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "lighthouse": "lhci autorun"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -34,6 +35,7 @@
     "@cypress/vue": "2.2.3",
     "@cypress/webpack-dev-server": "1.6.0",
     "@emmanuelgautier/renovate-config": "1.2.2",
+    "@lhci/cli": "0.8.2",
     "@nuxt/types": "2.15.8",
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/eslint-config-typescript": "6.0.1",

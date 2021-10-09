@@ -1,17 +1,14 @@
-name: ci
+name: lighthouse
 
 on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
 jobs:
-  ci:
+  lighthouse:
+    name: lighthouse
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
@@ -38,30 +35,15 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn --frozen-lockfile --silent
 
-      - name: Run linter 👀
-        run: yarn lint
+      - name: Run build production server 📦
+        run: yarn build
 
-      - name: Run tests 🧪
-        run: yarn test
-
-      - name: Run integration tests
-        uses: cypress-io/github-action@v2
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v8
         with:
-          browser: chrome
-          headless: true
-          build: yarn build
-          start: yarn start
-          command: yarn cy:run
-          wait-on: 'http://localhost:3000'
-
-      - uses: actions/upload-artifact@v2
-        if: failure()
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
-
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: cypress-videos
-          path: cypress/videos
+          urls: |
+            https://localhost:3000/
+          runs: 2
+          configPath: './lighthouserc.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true

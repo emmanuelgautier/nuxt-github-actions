@@ -1,0 +1,56 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:3000/"
+      ],
+      "startServerCommand": "yarn start",
+      "numberOfRuns": 2
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "first-contentful-paint": [
+          "warn",
+          {
+            "maxNumericValue": 2500,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "interactive": [
+          "warn",
+          {
+            "maxNumericValue": 5000,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "unused-css-rules": [
+          "warn",
+          {
+            "maxNumericValue": 0,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "unused-javascript": [
+          "warn",
+          {
+            "maxNumericValue": 0,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "color-contrast": "off",
+        "csp-xss": "off",
+        "external-anchors-use-rel-noopener": "off",
+        "link-name": "off",
+        "meta-description": "off",
+        "splash-screen": "off",
+        "themed-omnibox": "off",
+        "uses-long-cache-ttl": "off",
+        "uses-http2": "off"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

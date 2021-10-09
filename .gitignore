@@ -92,3 +92,6 @@ sw.*
 # Cypress files
 cypress/videos
 cypress/screenshots
+
+# Lighthouse files
+.lighthouseci

@@ -61,6 +61,6 @@
     "stylelint-config-standard": "22.0.0",
     "ts-jest": "27.0.7",
     "vue-jest": "3.0.7",
-    "webpack-dev-server": "4.4.0"
+    "webpack-dev-server": "4.5.0"
   }
 }

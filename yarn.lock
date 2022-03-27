@@ -1320,10 +1320,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@emmanuelgautier/renovate-config@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@emmanuelgautier/renovate-config/-/renovate-config-1.3.0.tgz#773a9e2383f3989617faa3d4549b2a3e60f0724d"
-  integrity sha512-tNYPH6rQR17vYy1xbDi3V40xYiZv+71U4eGPatoO9YbBw+itpbheCy1XrgjLXibtUIdWPly8+iM0I+2eRnd1+w==
+"@emmanuelgautier/renovate-config@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@emmanuelgautier/renovate-config/-/renovate-config-1.4.0.tgz#ed635ee55c573d56c3e02bcb2bb35187ce2263d9"
+  integrity sha512-dHc4X5F3zRT//dMdxOqR0/uZds8ZhdFmGkHnDr5ond3KMiQXk5YgE8s22iCVwP5LrAJ21EhWzOgEfV7P4ve9ig==
 
 "@endemolshinegroup/cosmiconfig-typescript-loader@^3.0.2":
   version "3.0.2"
